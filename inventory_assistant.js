@@ -1,4 +1,4 @@
-let itemName = "Lenovo Gamepad";
+let itemName = "Lenovo Gamepad 2070S";
 let unitCost = 203.23;
 let currentStock = 460;
 let reorderLevel = 400;
@@ -13,8 +13,8 @@ let reorderQuantity = (currentStock <= reorderLevel || weeksOfCover < supplierLe
 let estimatedReorderCost = reorderQuantity * unitCost;
 let reorderNow = currentStock <= reorderLevel || weeksOfCover < supplierLeadTimeWeeks;
 
-console.log("Product name:" + itemName);
-console.log("You are covered for:" + weeksOfCover.toFixed(2));
-console.log("Reorder Now:" + reorderNow);
-console.log("Is recommended to order:" + reorderQuantity)
-console.log("The estimated reorder cost is: $" + estimatedReorderCost.toFixed(2))
+console.log("Product name: " + itemName);
+console.log("You are covered for: " + weeksOfCover.toFixed(2) + " " + "weeks");
+console.log("Reorder Now: " + reorderNow);
+console.log("Is recommended to order: " + reorderQuantity)
+console.log("The estimated reorder cost is: $ " + estimatedReorderCost.toFixed(2))
